@@ -83,8 +83,8 @@ export class ContentService {
         { label: 'Software y Accesorios', href: '/software-y-accesorios' },
         { label: 'Servicios', href: '/servicios' }
       ]},
-      { label: 'NOSOTROS', href: '/nosotros' },
-      { label: 'CONTÁCTENOS', href: '/contactenos' }
+      { label: 'NOSOTROS', href: '/about-us' },
+      { label: 'CONTÁCTENOS', href: '/contact-us' }
     ];
   }
 
