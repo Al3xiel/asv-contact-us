@@ -1,5 +1,5 @@
 import {Component, DOCUMENT, effect, inject, Renderer2, signal} from '@angular/core';
-import {Router, RouterLink, RouterLinkActive} from '@angular/router';
+import {RouterLink, RouterLinkActive} from '@angular/router';
 import {ContentService} from '../../services/content.service';
 
 @Component({
@@ -13,7 +13,6 @@ import {ContentService} from '../../services/content.service';
 })
 export class Header {
   private contentService = inject(ContentService);
-  private router = inject(Router);
   private renderer = inject(Renderer2);
   private document = inject(DOCUMENT);
 
