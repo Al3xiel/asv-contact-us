@@ -13,10 +13,9 @@ import {ContentService} from '../../services/content.service';
 export class ContactUs1 {
   private contentService = inject(ContentService);
 
-  // Obtenemos la información de la empresa (teléfonos, correo, etc.)
   content = this.contentService.siteContent;
 
-  // Estado del formulario basado en tu interfaz ContactFormData
+  // Estado del formulario basado en la interfaz ContactFormData
   formData = signal<ContactFormData>({
     nombre: '',
     apellidos: '',

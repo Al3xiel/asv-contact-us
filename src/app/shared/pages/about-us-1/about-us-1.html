@@ -1,3 +1,134 @@
-<p>about-us-1 works!</p>
+<div class="min-h-screen bg-brand-white">
 
+  <section class="relative py-24 lg:py-32 bg-brand-navy overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-20"
+         style="background-image: url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1920')"></div>
+    <div class="relative max-w-7xl mx-auto px-4 lg:px-8 text-center">
+      <div class="flex items-center justify-center gap-4 mb-6">
+        <div class="w-12 h-px bg-brand-light-blue"></div>
+        <span class="text-brand-light-blue text-xs tracking-[0.3em] uppercase font-medium">Quiénes Somos</span>
+        <div class="w-12 h-px bg-brand-light-blue"></div>
+      </div>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-light text-brand-white mb-6 tracking-tight">
+        <span class="font-medium">Nosotros</span>
+      </h1>
+      <p class="text-sm md:text-base text-brand-light-gray/80 max-w-3xl mx-auto font-light tracking-[0.2em] uppercase">
+        +{{ content().company.yearsExperience }} años de Experiencia en el área de las Telecomunicaciones y Redes
+      </p>
+    </div>
+  </section>
 
+  <section class="py-20 lg:py-32 bg-brand-white">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+        <div class="lg:col-span-5 flex justify-center lg:justify-start">
+          <div class="bg-brand-navy p-12 lg:p-16 shadow-2xl relative overflow-hidden group w-full max-w-md">
+            <div class="absolute -right-8 -top-8 text-[12rem] font-bold text-brand-white/5 leading-none select-none group-hover:scale-110 transition-transform duration-700">
+              {{ content().company.yearsExperience }}
+            </div>
+
+            <div class="relative z-10">
+              <div class="flex items-baseline gap-2 mb-2">
+                <span class="text-7xl lg:text-8xl font-bold text-brand-white">+{{ content().company.yearsExperience }}</span>
+              </div>
+              <span class="text-2xl font-light text-brand-light-blue uppercase tracking-[0.2em] block mb-6">Años</span>
+
+              <div class="w-16 h-1 bg-brand-light-blue mb-6"></div>
+
+              <p class="text-brand-light-gray font-medium tracking-widest uppercase text-sm">
+                Generando<br>Confianza
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-6 text-brand-navy/80 text-lg leading-relaxed text-justify">
+          <p>
+            <strong class="text-brand-navy font-bold text-xl tracking-wide">ASV TELEFONICA</strong> es una empresa dedicada a brindarle Asesoría, Servicios, Venta, alquiler de Centrales Telefónicas, cableado estructurado en Categorías 5e, 6 y 6A, instalación y fusionado de fibras Ópticas, tensión estabilizada para Sistemas de cómputo, CCTV y Accesorios para Voz y Data.
+          </p>
+          <p>
+            Nuestro personal Asesor Técnico podrá darle soluciones y/o alternativas para una eficiente Comunicación, actualizando sus sistemas en servicio o dotándoles de equipos ideales que vayan de acuerdo a las necesidades actuales y futuras de su empresa.
+          </p>
+          <p>
+            Nuestro departamento de servicio técnico cuenta con personal altamente calificado, con más de <strong class="text-brand-navy font-semibold">{{ content().company.yearsExperience }} años de Experiencia</strong> en el área de las Telecomunicaciones y Redes. Estamos seguros de poder brindarles todo el respaldo necesario en el momento y el lugar que se nos requiera.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-brand-light-gray/5 border-y border-brand-light-gray/20">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+
+        <div class="bg-white p-8 lg:p-10 border border-brand-light-gray/20 hover:border-brand-light-blue hover:shadow-lg transition-all group">
+          <div class="w-12 h-12 bg-brand-navy text-brand-white rounded-none flex items-center justify-center mb-6 group-hover:bg-brand-light-blue transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-xl font-medium text-brand-navy mb-4 tracking-wide uppercase">Nuestra Misión</h3>
+          <p class="text-brand-medium-gray text-sm leading-relaxed">
+            Brindar servicios y soluciones de alta tecnología, que faciliten las operaciones productivas y administrativas de nuestros clientes, y generar su confianza con el otorgamiento de un servicio de calidad; garantizados por el profesionalismo y la permanente capacitación de nuestros colaboradores.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 lg:p-10 border border-brand-light-gray/20 hover:border-brand-light-blue hover:shadow-lg transition-all group">
+          <div class="w-12 h-12 bg-brand-navy text-brand-white rounded-none flex items-center justify-center mb-6 group-hover:bg-brand-light-blue transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+          </div>
+          <h3 class="text-xl font-medium text-brand-navy mb-4 tracking-wide uppercase">Nuestra Visión</h3>
+          <p class="text-brand-medium-gray text-sm leading-relaxed">
+            Ser considerados a nivel nacional, como una empresa que ofrece servicios y soluciones de alta tecnología con calidad y valor agregado.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 lg:p-10 border border-brand-light-gray/20 hover:border-brand-light-blue hover:shadow-lg transition-all group">
+          <div class="w-12 h-12 bg-brand-navy text-brand-white rounded-none flex items-center justify-center mb-6 group-hover:bg-brand-light-blue transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-xl font-medium text-brand-navy mb-4 tracking-wide uppercase">Nuestro Compromiso</h3>
+          <p class="text-brand-medium-gray text-sm leading-relaxed">
+            Nuestro compromiso es promover el éxito de nuestros clientes con soluciones adecuadas a sus necesidades, facilitando su desarrollo y el de nuestros colaboradores, basados en el mejoramiento continuo.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 lg:py-32 bg-brand-white">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="text-center mb-16">
+        <div class="flex items-center justify-center gap-4 mb-4">
+          <div class="w-8 h-px bg-brand-light-blue"></div>
+          <span class="text-brand-light-blue text-xs tracking-[0.3em] uppercase font-medium">Alianzas</span>
+          <div class="w-8 h-px bg-brand-light-blue"></div>
+        </div>
+        <h2 class="text-3xl lg:text-4xl font-light text-brand-navy mb-4">
+          Trabajamos con las <span class="font-medium">mejores marcas</span>
+        </h2>
+        <p class="text-brand-medium-gray max-w-2xl mx-auto">
+          Tu tranquilidad es nuestra prioridad. Por eso garantizamos nuestros proyectos trabajando únicamente con fabricantes de calidad comprobada a nivel mundial.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-px bg-brand-light-gray/20 border border-brand-light-gray/20">
+        @for (brand of content().brands; track brand.name) {
+          <div class="bg-white p-8 flex flex-col items-center justify-center hover:bg-brand-light-gray/5 transition-colors group">
+            @if (brand.logoUrl) {
+              <img [src]="brand.logoUrl"
+                   [alt]="brand.name"
+                   class="h-8 object-contain mb-3">
+            } @else {
+              <div class="h-8 flex items-center justify-center mb-3">
+                <span class="text-2xl font-bold text-brand-navy">{{ brand.name.charAt(0) }}</span>
+              </div>
+            }
+            <span class="text-[10px] tracking-wider text-brand-medium-gray text-center font-medium uppercase group-hover:text-brand-navy transition-colors">{{ brand.name }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+</div>
